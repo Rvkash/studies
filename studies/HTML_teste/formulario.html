@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <h1>Cadastro de Usuário</h1>
+    <form action="http://127.0.0.1:5000/register" method="POST" enctype="multipart/form-data">
+        <label for="username">Nome de usuário:</label><br>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="login">Login:</label><br>
+        <input type="text" id="login" name="login" required><br><br>
+
+        <label for="photo">Upload de Foto:</label><br>
+        <input type="file" id="photo" name="photo" accept="image/*" required><br><br>
+
+        <input type="submit" value="Cadastrar">
+    </form>
+</body>
+</html>
